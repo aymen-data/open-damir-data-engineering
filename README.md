@@ -1,4 +1,4 @@
-# Open DAMIR — pipeline Data Engineering
+# Open DAMIR — Data Engineering, ETL & Data Quality
 
 Projet pédagogique indépendant sur les **données publiques réelles de l’Assurance Maladie**. Il transforme les fichiers mensuels Open DAMIR en Parquet contrôlé, calcule des indicateurs avec DuckDB et compare Python/Polars/DuckDB.
 
