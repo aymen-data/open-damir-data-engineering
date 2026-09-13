@@ -1,0 +1,241 @@
+{
+  "created_at": "2026-09-12T17:11:44.525538+00:00",
+  "rows": 1000000,
+  "columns": [
+    "BEN_RES_REG",
+    "PRS_NAT",
+    "FLT_REM_MNT",
+    "FLT_PAI_MNT"
+  ],
+  "repeats": 3,
+  "scope": "premières lignes des partitions triées ; échantillon technique non représentatif",
+  "query": "GROUP BY BEN_RES_REG, COUNT(*), SUM(FLT_REM_MNT)",
+  "equivalent_results": true,
+  "reference_result": [
+    [
+      "11",
+      113090,
+      "34806896.520000"
+    ],
+    [
+      "24",
+      49229,
+      "8491830.840000"
+    ],
+    [
+      "27",
+      53101,
+      "17763236.880000"
+    ],
+    [
+      "28",
+      54138,
+      "13271717.220000"
+    ],
+    [
+      "32",
+      74301,
+      "21472237.300000"
+    ],
+    [
+      "44",
+      83920,
+      "26821660.860000"
+    ],
+    [
+      "5",
+      34727,
+      "9484983.650000"
+    ],
+    [
+      "52",
+      59576,
+      "11295500.860000"
+    ],
+    [
+      "53",
+      50230,
+      "9950726.360000"
+    ],
+    [
+      "75",
+      80987,
+      "22504017.790000"
+    ],
+    [
+      "76",
+      88616,
+      "24784171.680000"
+    ],
+    [
+      "84",
+      91369,
+      "23362213.080000"
+    ],
+    [
+      "93",
+      82575,
+      "25232652.400000"
+    ],
+    [
+      "99",
+      84141,
+      "51766025.180000"
+    ]
+  ],
+  "files": {
+    "sample.csv": {
+      "bytes": 27493547,
+      "sha256": "2b6fd3f642762fad67ca4bdffbe5a53dcb818d740dd57c8a648d8ce06752e512"
+    },
+    "sample.parquet": {
+      "bytes": 6809767,
+      "sha256": "8d1421366f19c497eb77c80a4727b470866aace4ea87b13ce66cda23206b43e5"
+    }
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "polars": "1.44.2",
+    "duckdb": "1.5.5",
+    "logical_cpus": 12,
+    "threads_per_engine": 4,
+    "ram_gib": 39.73033905029297
+  },
+  "limitations": [
+    "Caches disque non vidés ; mesures après échauffement.",
+    "Imports et préparation des fichiers exclus ; lecture, parsing et agrégation inclus.",
+    "RSS totale du processus échantillonnée toutes les 10 ms ; pic bref possiblement manqué.",
+    "Python CSV mono-thread ; moteurs autorisés à utiliser 4 threads.",
+    "Pas de preuve de traitement au-delà de la RAM ni de calcul distribué."
+  ],
+  "summary": [
+    {
+      "mode": "python_csv",
+      "median_seconds": 1.5143361999944318,
+      "min_seconds": 1.501329299993813,
+      "max_seconds": 1.577670800004853,
+      "max_rss_mib": 20.3515625
+    },
+    {
+      "mode": "polars_csv",
+      "median_seconds": 0.04620939999585971,
+      "min_seconds": 0.04410169999755453,
+      "max_seconds": 0.0481625999964308,
+      "max_rss_mib": 97.27734375
+    },
+    {
+      "mode": "polars_parquet",
+      "median_seconds": 0.01950149999174755,
+      "min_seconds": 0.018121800007065758,
+      "max_seconds": 0.02161559999512974,
+      "max_rss_mib": 91.984375
+    },
+    {
+      "mode": "duckdb_csv",
+      "median_seconds": 0.37251270000706427,
+      "min_seconds": 0.34644269999989774,
+      "max_seconds": 0.3727101999975275,
+      "max_rss_mib": 74.94140625
+    },
+    {
+      "mode": "duckdb_parquet",
+      "median_seconds": 0.029218299998319708,
+      "min_seconds": 0.02835370000684634,
+      "max_seconds": 0.030109600003925152,
+      "max_rss_mib": 47.83203125
+    }
+  ],
+  "measurements": [
+    {
+      "mode": "duckdb_csv",
+      "seconds": 0.34644269999989774,
+      "peak_rss_mib": 74.6640625,
+      "repeat": 1
+    },
+    {
+      "mode": "polars_parquet",
+      "seconds": 0.01950149999174755,
+      "peak_rss_mib": 86.9453125,
+      "repeat": 1
+    },
+    {
+      "mode": "python_csv",
+      "seconds": 1.501329299993813,
+      "peak_rss_mib": 20.296875,
+      "repeat": 1
+    },
+    {
+      "mode": "duckdb_parquet",
+      "seconds": 0.029218299998319708,
+      "peak_rss_mib": 43.109375,
+      "repeat": 1
+    },
+    {
+      "mode": "polars_csv",
+      "seconds": 0.04410169999755453,
+      "peak_rss_mib": 95.04296875,
+      "repeat": 1
+    },
+    {
+      "mode": "duckdb_csv",
+      "seconds": 0.3727101999975275,
+      "peak_rss_mib": 74.90625,
+      "repeat": 2
+    },
+    {
+      "mode": "polars_csv",
+      "seconds": 0.04620939999585971,
+      "peak_rss_mib": 97.27734375,
+      "repeat": 2
+    },
+    {
+      "mode": "polars_parquet",
+      "seconds": 0.018121800007065758,
+      "peak_rss_mib": 81.78125,
+      "repeat": 2
+    },
+    {
+      "mode": "python_csv",
+      "seconds": 1.5143361999944318,
+      "peak_rss_mib": 20.3515625,
+      "repeat": 2
+    },
+    {
+      "mode": "duckdb_parquet",
+      "seconds": 0.02835370000684634,
+      "peak_rss_mib": 44.1796875,
+      "repeat": 2
+    },
+    {
+      "mode": "polars_csv",
+      "seconds": 0.0481625999964308,
+      "peak_rss_mib": 96.29296875,
+      "repeat": 3
+    },
+    {
+      "mode": "polars_parquet",
+      "seconds": 0.02161559999512974,
+      "peak_rss_mib": 91.984375,
+      "repeat": 3
+    },
+    {
+      "mode": "duckdb_csv",
+      "seconds": 0.37251270000706427,
+      "peak_rss_mib": 74.94140625,
+      "repeat": 3
+    },
+    {
+      "mode": "duckdb_parquet",
+      "seconds": 0.030109600003925152,
+      "peak_rss_mib": 47.83203125,
+      "repeat": 3
+    },
+    {
+      "mode": "python_csv",
+      "seconds": 1.577670800004853,
+      "peak_rss_mib": 20.33203125,
+      "repeat": 3
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-09-12T16:51:52.126815+00:00",
+  "method": "DuckDB lit indépendamment CSV brut et Parquet, compte les lignes et compare exactement sept sommes monétaires",
+  "results": [
+    {
+      "month": "202501",
+      "rows": 36640259,
+      "equal": true,
+      "sums": {
+        "PRS_DEP_MNT": "980958716.570000",
+        "PRS_PAI_MNT": "16233490141.080000",
+        "PRS_REM_BSE": "12434039537.670000",
+        "PRS_REM_MNT": "13756661698.730000",
+        "FLT_PAI_MNT": "14048903786.750000",
+        "FLT_DEP_MNT": "951356443.990000",
+        "FLT_REM_MNT": "13342058546.160000"
+      }
+    }
+  ]
+}

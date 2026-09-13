@@ -1,0 +1,7 @@
+{
+  "source_url": "https://www.assurance-maladie.ameli.fr/content/descriptif-des-variables-de-la-serie-open-damir-base-complete",
+  "retrieved_date": "2026-09-12",
+  "sha256": "c243a9f8de420db5909a8d99c7419f779a102d0f12cd8a1098b1f23bfd035a7e",
+  "extraction": "scripts/extract_dictionary.py",
+  "note": "Classeur officiel joint, version disponible à la récupération."
+}

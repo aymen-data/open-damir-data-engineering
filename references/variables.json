@@ -1,0 +1,307 @@
+{
+  "AGE_BEN_SNDS": {
+    "label": "Tranche d'Age Bénéficiaire au moment des soins",
+    "category": "BENEFICIAIRE",
+    "comment": "L’âge du bénéficiaire au moment des soins est calculé ainsi : (Année/Mois de début des soins) – (Année/Mois de naissance du bénéficiaire). Il est ensuite regroupé en tranche d’âge "
+  },
+  "ASU_NAT": {
+    "label": "Nature d'Assurance",
+    "category": "PRESTATION",
+    "comment": null
+  },
+  "ATT_NAT": {
+    "label": "Nature de l'Accident du Travail",
+    "category": "PRESTATION",
+    "comment": null
+  },
+  "BEN_CMU_TOP": {
+    "label": "Top Bénéficiaire CMU-C ",
+    "category": "BENEFICIAIRE",
+    "comment": "Jusqu'àu mois de mars 2021,vaut ‘1’ (=‘OUI’) si la prestation qui a fait l’objet du remboursement est prise en charge au titre de la CMU-Complémentaire ET si cette prestation n’est pas exonérée du ticket modérateur pour un autre motif (exemple : ALD) car ce dernier prime sur le TOP CMU-C pour le remboursement de la prestation. A partir d'avril 2021,vaut ‘1’ (=‘OUI’) si la prestation qui a fait l’objet du remboursement est prise en charge au titre de la C2S ET si cette prestation n’est pas exonérée du ticket modérateur pour un autre motif (exemple : ALD) car ce dernier prime sur la C2S pour le remboursement de la prestation."
+  },
+  "BEN_QLT_COD": {
+    "label": "Qualité du Bénéficiaire",
+    "category": "BENEFICIAIRE",
+    "comment": null
+  },
+  "BEN_RES_REG": {
+    "label": "Région de Résidence du Bénéficiaire à partir de 2015 (tables A)",
+    "category": "BENEFICIAIRE",
+    "comment": null
+  },
+  "BEN_RES_ZEAT": {
+    "label": "ZEAT de Résidence du Bénéficiaire  jusqu'à 2014 (tables P)",
+    "category": "BENEFICIAIRE",
+    "comment": null
+  },
+  "BEN_SEX_COD": {
+    "label": "Sexe du Bénéficiaire",
+    "category": "BENEFICIAIRE",
+    "comment": null
+  },
+  "CPL_COD": {
+    "label": "Complément d'Acte",
+    "category": "PRESTATION",
+    "comment": "Uniquement des compléments d'actes Nuit, Férié, Urgences"
+  },
+  "CPT_ENV_TYP": {
+    "label": "Type d'Enveloppe",
+    "category": "PRESTATION",
+    "comment": "Le type d’enveloppe = 1 correspond aux dépenses de soins de ville. Il s’agit des honoraires et des prescriptions des professionnels de santé libéraux :\n• Les honoraires et prescriptions des cabinets de ville;\n• Les honoraires et prescriptions des cliniques privées;\n• Les honoraires er prescriptions des centres de santé.\n\nLe type d’enveloppe = 2 correspond aux versements aux établissements de santé publics, privés et médico-sociaux.\n \nONDAM (Objectif National des Dépenses d’Assurance Maladie) voté chaque année dans le cadre de la Loi de Financement de la Sécurité Sociale = Enveloppes 1 + 2.\n\nLe type d’enveloppe = 3 correspond aux prestations légales Assurance Maladie hors enveloppe ONDAM."
+  },
+  "DDP_SPE_COD": {
+    "label": "Discipline de Prestation Etb Exécutant",
+    "category": "EXECUTANT",
+    "comment": null
+  },
+  "DRG_AFF_NAT": {
+    "label": "Nature du Destinataire de Règlement affiné",
+    "category": "PRESTATION",
+    "comment": null
+  },
+  "ETE_CAT_SNDS": {
+    "label": "Catégorie Etb Exécutant",
+    "category": "EXECUTANT",
+    "comment": null
+  },
+  "ETE_IND_TAA": {
+    "label": "Indicateur TAA Privé/Public",
+    "category": "PRESTATION",
+    "comment": "La dimension « Indicateur TAA » permet de cibler les prestations en facturation directe à l’Assurance maladie : Actes et Consultations Externes. Pour les cibler, il faut prendre l'indicateur TAA public."
+  },
+  "ETE_REG_COD": {
+    "label": "Région d'Implantation Etb Exécutant à partir de 2015 (tables A)",
+    "category": "EXECUTANT",
+    "comment": null
+  },
+  "ETE_TYP_SNDS": {
+    "label": "Type Etb Exécutant",
+    "category": "EXECUTANT",
+    "comment": null
+  },
+  "ETE_ZEAT_COD": {
+    "label": "ZEAT d'Implantation Etb Exécutant  jusqu'à 2014 (tables P)",
+    "category": "EXECUTANT",
+    "comment": null
+  },
+  "ETP_CAT_SNDS": {
+    "label": "Catégorie Etb Prescripteur",
+    "category": "PRESCRIPTEUR",
+    "comment": null
+  },
+  "ETP_REG_COD": {
+    "label": "Région d'Implantation Etb Prescripteur à partir de 2015 (tables A)",
+    "category": "PRESCRIPTEUR",
+    "comment": null
+  },
+  "ETP_ZEAT_COD": {
+    "label": "ZEAT d'Implantation Etb Prescripteur  jusqu'à 2014 (tables P)",
+    "category": "PRESCRIPTEUR",
+    "comment": null
+  },
+  "EXE_INS_REG": {
+    "label": "Région du PS Exécutant à partir de 2015 (tables A)",
+    "category": "EXECUTANT",
+    "comment": "Informe de la région d’exécution de la prestation par un professionnel de santé dans un cabinet qu’il soit principal ou secondaire."
+  },
+  "EXE_INS_ZEAT": {
+    "label": "ZEAT du PS Exécutant  jusqu'à 2014 (tables P)",
+    "category": "EXECUTANT",
+    "comment": null
+  },
+  "EXO_MTF": {
+    "label": "Motif d'Exonération du Ticket Modérateur",
+    "category": "PRESTATION",
+    "comment": "Pour connaitre les bénéficiaires en ALD, il faut prendre les EXO_MTF = 41 à 46."
+  },
+  "FLT_ACT_COG": {
+    "label": "Coefficient Global de la Prestation Préfiltré",
+    "category": "INDICATEURS PREFILTRES",
+    "comment": "Le coefficient global est préfiltré sur le type de remboursement (PRS_REM_TYP) 0, il contient déjà le coefficient global de tous les types de remboursement.\n \nNB : Si ce filtre n'est pas fait, les coefficients seront doublés.\n\nIl représente un volume : quantité x coefficient tarifé de l'acte."
+  },
+  "FLT_ACT_NBR": {
+    "label": "Dénombrement de la Prestation Préfiltré",
+    "category": "INDICATEURS PREFILTRES",
+    "comment": "Le dénombrement est préfiltré sur le type de remboursement (PRS_REM_TYP) 0, il contient déjà le dénombrement de tous les types de remboursement.\n \nNB : Si ce filtre n'est pas fait, les dénombrements seront doublés.\n\nAttention, il faut privilégier la quantité au dénombrement. En effet, les données du dénombrement ne sont pas remontées pour l’ensemble des régimes (elles sont remontées pour le régime général et les régimes infogérés)."
+  },
+  "FLT_ACT_QTE": {
+    "label": "Quantité de la Prestation Préfiltrée",
+    "category": "INDICATEURS PREFILTRES",
+    "comment": "La quantité est préfiltrée sur le type de remboursement (PRS_REM_TYP) 0, elle contient déjà la quantité de tous les types de remboursement.\n \nNB : Si ce filtre n'est pas fait, les quantités seront doublées.\n\nPour compter des actes, il faut utiliser la variable « quantité d’actes ». Elle sert à tarifer et à calculer le remboursement selon la formule suivante : \nMontant remboursé = base de remboursement * quantité d’actes * taux de remboursement"
+  },
+  "FLT_DEP_MNT": {
+    "label": "Montant du Dépassement de la Prestation Préfiltré",
+    "category": "INDICATEURS PREFILTRES",
+    "comment": "Le montant du dépassement est préfiltré sur le type de remboursement (PRS_REM_TYP) 0, il contient déjà la dépassement de tous les types de remboursement.\n \nNB : Si ce filtre n'est pas fait, les montants seront doublés.\n\nLe montant de dépassement concerne uniquement du dépassement d’honoraires de médecins, il est non alimenté lorsqu’il s’agit de produits et prestations (LPP). Dans ce dernier cas, il faut recalculer l’indicateur de la manière suivante : Dépassement = Montant payé – base de remboursement."
+  },
+  "FLT_PAI_MNT": {
+    "label": "Montant de la Dépense de la Prestation Préfiltrée",
+    "category": "INDICATEURS PREFILTRES",
+    "comment": "Le montant de la dépense est préfiltré sur le type de remboursement (PRS_REM_TYP) 0, il contient déjà la dépense de tous les types de remboursement.\n \nNB : Si ce filtre n'est pas fait, les montants seront doublés.\n\nLe montant de la dépense correspond au montant payé par le patient, donc les honoraires du professionnel de santé."
+  },
+  "FLT_REM_MNT": {
+    "label": "Montant Versé/Remboursé Préfiltré",
+    "category": "INDICATEURS PREFILTRES",
+    "comment": "Le montant remboursé est préfiltré sur le type de remboursement (PRS_REM_TYP) 0 ou 1, c'est à dire qu'il s'agit du montant remboursé de la part légale de l'Assurance Maladie."
+  },
+  "FLX_ANN_MOI": {
+    "label": "Année et Mois de Traitement",
+    "category": "PERIODE DE TRAITEMENT",
+    "comment": "Date technique qui correspond à la date de chargement des flux arrivés dans l’entrepôt émanant de tous les organismes et régimes depuis le dernier chargement "
+  },
+  "MDT_TYP_COD": {
+    "label": "Mode de Traitement Etb Exécutant",
+    "category": "EXECUTANT",
+    "comment": null
+  },
+  "MFT_COD": {
+    "label": "Mode de Fixation des Tarifs Etb Exécutant",
+    "category": "EXECUTANT",
+    "comment": null
+  },
+  "MTM_NAT": {
+    "label": "Modulation du Ticket Modérateur",
+    "category": "BENEFICIAIRE",
+    "comment": null
+  },
+  "ORG_CLE_REG": {
+    "label": "Région de l'Organisme de Liquidation à partir de 2015 (tables A)",
+    "category": "ORGANISME",
+    "comment": "Région de l'organisme qui « liquide », c’est-à-dire qui effectue le remboursement des prestations pour les bénéficiaires qui lui sont affiliés, mais aussi, éventuellement, pour des bénéficiaires affiliés dans d’autres organismes :\nCas des cures thermales liquidées sur le lieu d’implantation de l’établissement, quelle que soit l’affiliation du bénéficiaire, cas des caisses des DOM (hors Guadeloupe), qui liquident les prestations des salariés agricoles du régime agricole et cas des SLM « infogérées » : SLM qui ont restitué la gestion de la part de base des remboursements, effectuée par un organisme de liquidation spécifique."
+  },
+  "ORG_CLE_ZEAT": {
+    "label": "ZEAT de l'Organisme de Liquidation jusqu'à 2014 (tables P)",
+    "category": "ORGANISME",
+    "comment": null
+  },
+  "PRE_INS_REG": {
+    "label": "Région du PS Prescripteur à partir de 2015 (tables A)",
+    "category": "PRESCRIPTEUR",
+    "comment": "Informe de la région de prescription de la prestation par un professionnel de santé dans un cabinet qu’il soit principal ou secondaire."
+  },
+  "PRE_INS_ZEAT": {
+    "label": "ZEAT du PS Prescripteur jusqu'à 2014 (tables P)",
+    "category": "PRESCRIPTEUR",
+    "comment": null
+  },
+  "PRS_ACT_COG": {
+    "label": "Coefficient Global",
+    "category": "INDICATEURS BRUTS",
+    "comment": "\nIndicateurs bruts destinés aux utilisateurs avertis des données, qui maitrisent les filtres sur les types de remboursement : \n- filtre impératif sur type de remboursement = 0 pour  comptabiliser les prestations sans doublon de type de remboursement puisque la totalité du coefficient global se trouve au sein de la modalité 0\n- filtre sur un type de remboursement <> 0 (choisir la valeur de la modalité en fonction du type de remboursement précis).\n\n\nIl représente un volume : quantité x coefficient tarifé de l'acte."
+  },
+  "PRS_ACT_NBR": {
+    "label": "Dénombrement",
+    "category": "INDICATEURS BRUTS",
+    "comment": "\nIndicateurs bruts destinés aux utilisateurs avertis des données, qui maitrisent les filtres sur les types de remboursement : \n- filtre impératif sur type de remboursement = 0 pour  comptabiliser les prestations sans doublon de type de remboursement puisque la totalité du dénombrement se trouve au sein de la modalité 0\n- filtre sur un type de remboursement <> 0 (choisir la valeur de la modalité en fonction du type de remboursement précis).\n\nAttention, il faut privilégier la quantité au dénombrement. En effet, les données du dénombrement ne sont pas remontées pour l’ensemble des régimes (elles sont remontées pour le régime général et les régimes infogérés)."
+  },
+  "PRS_ACT_QTE": {
+    "label": "Quantité",
+    "category": "INDICATEURS BRUTS",
+    "comment": "\nIndicateurs bruts destinés aux utilisateurs avertis des données, qui maitrisent les filtres sur les types de remboursement : \n- filtre impératif sur type de remboursement = 0 pour  comptabiliser les prestations sans doublon de type de remboursement puisque la totalité de la quantité se trouve au sein de la modalité 0\n- filtre sur un type de remboursement <> 0 (choisir la valeur de la modalité en fonction du type de remboursement précis).\n\nPour compter des actes, il faut utiliser la variable « quantité d’actes ». Elle sert à tarifer et à calculer le remboursement selon la formule suivante : \nMontant remboursé = base de remboursement * quantité d’actes * taux de remboursement"
+  },
+  "PRS_DEP_MNT": {
+    "label": "Montant du Dépassement",
+    "category": "INDICATEURS BRUTS",
+    "comment": "\nIndicateurs bruts destinés aux utilisateurs avertis des données, qui maitrisent les filtres sur les types de remboursement : \n- filtre impératif sur type de remboursement = 0 pour  comptabiliser les prestations sans doublon de type de remboursement puisque la totalité du dépassement se trouve au sein de la modalité 0\n- filtre sur un type de remboursement <> 0 (choisir la valeur de la modalité en fonction du type de remboursement précis).\n\nLe montant de dépassement concerne uniquement du dépassement d’honoraires de médecins, il est non alimenté lorsqu’il s’agit de produits et prestations (LPP). Dans ce dernier cas, il faut recalculer l’indicateur de la manière suivante : Dépassement = Montant payé – base de remboursement."
+  },
+  "PRS_FJH_TYP": {
+    "label": "Type de Prise en Charge Forfait Journalier",
+    "category": "PRESTATION",
+    "comment": null
+  },
+  "PRS_NAT": {
+    "label": "Nature de Prestation",
+    "category": "PRESTATION",
+    "comment": "Permet de distinguer chaque acte principal de ses majorations."
+  },
+  "PRS_PAI_MNT": {
+    "label": "Montant de la Dépense ",
+    "category": "INDICATEURS BRUTS",
+    "comment": "\nIndicateurs bruts destinés aux utilisateurs avertis des données, qui maitrisent les filtres sur les types de remboursement : \n- filtre impératif sur type de remboursement = 0 pour  comptabiliser les prestations sans doublon de type de remboursement puisque la totalité de la dépense se trouve au sein de la modalité 0\n- filtre sur un type de remboursement <> 0 (choisir la valeur de la modalité en fonction du type de remboursement précis).\n\nLe montant de la dépense correspond au montant payé par le patient, donc les honoraires du professionnel de santé."
+  },
+  "PRS_PDS_QCP": {
+    "label": "Code Qualificatif Parcours de Soins (sortie)",
+    "category": "PRESTATION",
+    "comment": null
+  },
+  "PRS_PPU_SEC": {
+    "label": "Code Secteur Privé/Public",
+    "category": "PRESTATION",
+    "comment": null
+  },
+  "PRS_REM_BSE": {
+    "label": "Base de Remboursement",
+    "category": "INDICATEURS BRUTS",
+    "comment": "Cet indicateur peut s'utiliser sans filtres sur le type de remboursement. Dans ce cas, il s'agit de la base de remboursement des prestations légales d'Assurance Maladie (0,1) et des parts supplémentaires (>=2). Il peut également être filtré sur le type de remboursement (PRS_REM_TYP) selon la base de remboursement que vous souhaitez cibler.\n\nLa base de remboursement correspond au montant de la base remboursée par l'Assurance Maladie au bénéficiaire."
+  },
+  "PRS_REM_MNT": {
+    "label": "Montant Versé/Remboursé",
+    "category": "INDICATEURS BRUTS",
+    "comment": "Cet indicateur peut s'utiliser sans filtres sur le type de remboursement. Dans ce cas, il s'agit du montant remboursé des prestations légales d'Assurance Maladie (0,1) et des parts supplémentaires (>=2). Il peut également être filtré sur le type de remboursement (PRS_REM_TYP) selon le montant remboursé que vous souhaitez cibler.\n\nLe montant remboursé correspond au montant payé par l'Assurance Maladie au bénéficiaire, en fonction de la base de remboursement et du taux de remboursement."
+  },
+  "PRS_REM_TAU": {
+    "label": "Taux de Remboursement",
+    "category": "PRESTATION",
+    "comment": "Le « Taux de remboursement » contient le taux qui est utilisé pour calculer le montant remboursé."
+  },
+  "PRS_REM_TYP": {
+    "label": "Type de Remboursement",
+    "category": "PRESTATION",
+    "comment": "Pour prendre en compte les parts légales, il faut utiliser PRS_REM_TYP = 0 ou 1, les autres valeurs concernent les parts supplémentaires (voir modalités ci-contre)."
+  },
+  "PSE_ACT_CAT": {
+    "label": "Catégorie de l' Exécutant",
+    "category": "EXECUTANT",
+    "comment": null
+  },
+  "PSE_ACT_SNDS": {
+    "label": "Nature d'Activité PS Exécutant",
+    "category": "EXECUTANT",
+    "comment": "Renseignée pour les professions de santé non médicales (attention aux dentistes présents en nature d'activité 19, 53, 54 et spécialité médicale 36)"
+  },
+  "PSE_SPE_SNDS": {
+    "label": "Spécialité Médicale PS Exécutant",
+    "category": "EXECUTANT",
+    "comment": "Renseigné pour les professions médicales (attention aux dentistes présents en nature d'activité 19, 53, 54 et spécialité médicale 36)"
+  },
+  "PSE_STJ_SNDS": {
+    "label": "Statut Juridique PS Exécutant",
+    "category": "EXECUTANT",
+    "comment": "L’objet « Statut juridique du PS Exécutant » est renseigné uniquement pour les données liquidées par les régimes RG et infogérées, il vaut ’90’ (= valeur inconnue) pour les autres."
+  },
+  "PSP_ACT_CAT": {
+    "label": "Catégorie du Prescripteur",
+    "category": "PRESCRIPTEUR",
+    "comment": null
+  },
+  "PSP_ACT_SNDS": {
+    "label": "Nature d'Activité PS Prescripteur",
+    "category": "PRESCRIPTEUR",
+    "comment": "Renseignée pour les professions de santé non médicales (attention aux dentistes présents en nature d'activité 19, 53, 54 et spécialité médicale 36)"
+  },
+  "PSP_SPE_SNDS": {
+    "label": "Spécialité Médicale PS Exécutant",
+    "category": "PRESCRIPTEUR",
+    "comment": "Renseigné pour les professions médicales (attention aux dentistes présents en nature d'activité 19, 53, 54 et spécialité médicale 36)"
+  },
+  "PSP_STJ_SNDS": {
+    "label": "Statut Juridique PS Prescripteur",
+    "category": "PRESCRIPTEUR",
+    "comment": "L’objet « Statut juridique du PS Perscripteur » est renseigné uniquement pour les données liquidées par les régimes RG et infogérées, il vaut ’90’ (= valeur inconnue) pour les autres."
+  },
+  "SOI_ANN": {
+    "label": "Année de Soins",
+    "category": "PERIODE",
+    "comment": null
+  },
+  "SOI_MOI": {
+    "label": "Mois de Soins",
+    "category": "PERIODE",
+    "comment": null
+  },
+  "TOP_PS5_TRG": {
+    "label": "Top Périmètre hors CMU C et prestations pour information",
+    "category": "TOP PS5",
+    "comment": "Ce top permet de se re-situer sur le périmètre de la Statistique Mensuelle en tous régimes => TOP_PS5_TRG = 1"
+  }
+}
